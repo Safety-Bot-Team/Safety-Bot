@@ -7,9 +7,9 @@ module.exports = {
             .setColor('#00ffeb')
             .setTitle('Help page')
             .setURL('https://findahelpline.com/i/iasp')
-            .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png', 'https://cdn.discordapp.com/attachments/819260613414748160/856803693222428702/AAUvwngSrZ_JhobKuYEdcA0F4hyl9jxJm42KJvei3PYxMws88-c-k-c0x00ffffff-no-rj.png')
+            .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png', 'https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
             .setDescription('if you need help, just click on the word "help page" and you will be helped. otherwise, you will find some numbers and more information about the bot below.')
-            .setThumbnail('https://www.iasp-pain.org/files/PageLayoutImages/IASP%20Logo%20270X98_1504021088752_1.png')
+            .setThumbnail('https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
             .addFields(
                 { name: 'Numbers that can help: ', value: 'Here are a few numbers and pages that might help' },
                 { name: '\u200B', value: '\u200B' },
@@ -31,7 +31,7 @@ module.exports = {
                 { name: '-hug / -givehug', value: 'ask or give your contact person for a hug', inline: true },
             )
             .addField('In these strange and stressful times, you’re not alone.', 'Helplines, also known as hotlines, exist to provide a confidential, non-judgemental space – for free.\n\nThey are staffed by supportive people, who provide immediate support, counselling and information.', false)
-            .setImage('https://cdn.discordapp.com/attachments/819260613414748160/856803739368554516/international-association-of-science-parks-and-areas-of-innovation-iasp-vector-logo.png')
+            .setImage('https://cdn.discordapp.com/attachments/856253281801994271/857712338307645440/IASP_Logo_Linear.png')
             .setTimestamp()
             .setFooter('The offered one who is there for you', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png');
 
@@ -44,13 +44,13 @@ module.exports = {
             .setURL('https://findahelpline.com/i/iasp')
             .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png', 'https://cdn.discordapp.com/attachments/819260613414748160/856803693222428702/AAUvwngSrZ_JhobKuYEdcA0F4hyl9jxJm42KJvei3PYxMws88-c-k-c0x00ffffff-no-rj.png')
             .setDescription('this bot is still in beta and there can often be bugs or commands not working, so please let me know (Discord:Unterwegs#6666)')
-            .setThumbnail('https://www.iasp-pain.org/files/PageLayoutImages/IASP%20Logo%20270X98_1504021088752_1.png')
+            .setThumbnail('https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
             .addFields(
                 { name: 'This bot is programmed by ', value: 'Unterwegs#6666\n' },   
                 { name: 'And special thanks to :', value: 'LeonieSizzels#2009',}, 
             )
             .addField('In these strange and stressful times, you’re not alone.', 'Helplines, also known as hotlines, exist to provide a confidential, non-judgemental space – for free.\n\nThey are staffed by supportive people, who provide immediate support, counselling and information.', false)
-            .setImage('https://cdn.discordapp.com/attachments/819260613414748160/856803739368554516/international-association-of-science-parks-and-areas-of-innovation-iasp-vector-logo.png')
+            .setImage('https://cdn.discordapp.com/attachments/856253281801994271/857712338307645440/IASP_Logo_Linear.png')
             .setTimestamp()
             .setFooter('The offered one who is there for you', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png');
             
