@@ -1,4 +1,6 @@
 require('dotenv').config();
+const fs = require('fs');
+const dmsafer = require('../../commands/dmsafer');
 const profileModel = require('../../Models/profileSchema');
 module.exports = async (Discord, client, message) =>{
     const prefix = process.env.PREFIX;
@@ -12,6 +14,7 @@ module.exports = async (Discord, client, message) =>{
                 userID: message.author.id,
                 serverID: message.guild.id,
                 contact: "",
+                country: "Null",
             });
         }
     }catch(err){

@@ -8,8 +8,11 @@
   "author": "Unterwegs#6666",
   "license": "ISC",
   "dependencies": {
+    "anti-swear-words-packages-discord": "^1.1.43",
+    "axios": "^0.21.1",
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
+    "google-translate-api": "^2.3.0",
     "memorystream": "^0.3.1",
     "mongoose": "^5.12.14",
     "ms": "^2.1.3",
