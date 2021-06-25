@@ -16,6 +16,7 @@ module.exports = {
             {
                 $set: {
                     contact:  memberTarget,
+                    serverID: message.guild.id,
                 }
             });  
             return message.channel.send(`${message.author.username}, you added ${memberTarget} as ur contact!`) 

@@ -4,13 +4,25 @@ const mongoose = require("mongoose");
 const translate = require('google-translate-api');
 require('dotenv').config();
 const fs = require('fs');
+var p = 0;
 
-client.command = new Discord.Collection();
-client.events = new Discord.Collection();
-
-['command_handler', 'event_handler'].forEach(handler => {
-    require(`./handlers/${handler}`)(client, Discord);
-})
+module.exports = async (Discord, client, message) =>{
+    let profileData;
+    try {
+        profileData = await profileModel.findOne({ userID: message.author.id});
+        if(!profileData){
+            let profile = await profileModel.create({
+                userID: message.author.id,
+                serverID: message.guild.id,
+                contact: "",
+                country: "Null",
+                strike: 0,
+            });
+        }
+    }catch(err){
+        console.log(err)
+    }
+}
 
 mongoose
 .connect(process.env.MONGODB_SRV, {
@@ -84,5 +96,10 @@ client.on('message', msg => {
         }
     }
 });
+client.command = new Discord.Collection();
+client.events = new Discord.Collection();
 
+['command_handler', 'event_handler'].forEach(handler => {
+    require(`./handlers/${handler}`)(client, Discord);
+})
 client.login(process.env.DISCORD_TOKEN);

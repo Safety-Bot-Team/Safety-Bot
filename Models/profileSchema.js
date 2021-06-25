@@ -4,7 +4,8 @@ const profileschema = new mongoose.Schema({
     userID: {type: String, require: true, unique: true},
     serverID: {type: String, require: true},
     contact: {type: String},
-    country: {type: String, default: "Null"}
+    country: {type: String, default: "Null"},
+    strike: {type: Number, default: 0}
 });
 
 const model = mongoose.model("ProfileModels", profileschema);
