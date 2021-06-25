@@ -57,10 +57,10 @@ client.on('message', msg => {
             console.error(err);
         });
         if ((/kill myself/gm).test(msg.content)) {
-            msg.reply('No suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :) \nWebsite: https://findahelpline.com/i/iasp'); 
+            msg.reply('No! suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :) \nWebsite: https://findahelpline.com/i/iasp'); 
          }
          if ((/killing myself/gm).test(msg.content)) {
-            msg.reply('No suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :) \nWebsite: https://findahelpline.com/i/iasp');
+            msg.reply('No! suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :) \nWebsite: https://findahelpline.com/i/iasp');
         }
         if ((/dont support me/gm).test(msg.content)) {
             msg.reply('There are many people who cant put themselves in your shoes, they dont know how you feel inside or cant interpret it correctly. If you need professional and anonymous help, you can always go to the website and get some. \nWebsite: https://findahelpline.com/i/iasp');
@@ -72,13 +72,16 @@ client.on('message', msg => {
             msg.reply('There are many people who cant put themselves in your shoes, they dont know how you feel inside or cant interpret it correctly. If you need professional and anonymous help, you can always go to the website and get some. \nWebsite: https://findahelpline.com/i/iasp');
         }
         if ((/I cant live any/gm).test(msg.content)) {
-            msg.reply('No suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
+            msg.reply('No! suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
         }
         if ((/I can´t live any/gm).test(msg.content)) {
-            msg.reply('No suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
+            msg.reply('No! suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
         }
         if ((/I can not live any/gm).test(msg.content)) {
-            msg.reply('No suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
+            msg.reply('No! suicide is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but suicide is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
+        } 
+        if ((/hurt myself/gm).test(msg.content)) {
+            msg.reply('No! Hurting yourself is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but hurting yourself is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
         }
     }
 });
