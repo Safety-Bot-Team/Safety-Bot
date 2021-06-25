@@ -9,6 +9,7 @@ module.exports = {
         const memberTarget = message.guild.members.cache.get(target.id);
         if(message.author.id === target.id) return message.channel.send("You cant add ur self as an contact");
         else if(target.id === profileData.contact) return message.channel.send("You already have this person as your contact");
+        else if(target.id === "855086792083374081") return message.channel.send("you can't add me as a contact person, I am already always there for you ")
         else{
             const response = await profileModel.findOneAndUpdate({
                 userID: message.author.id,
