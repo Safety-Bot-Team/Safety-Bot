@@ -11,7 +11,7 @@ module.exports = {
                 .setColor('#00ffeb')
                 .setTitle('Information')
                 .setURL('https://findahelpline.com/i/iasp')
-                .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png', 'https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
+                .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/856253281801994271/858023194204307536/1_KYdE5HFhK1zwX0oaZ9EP5w.png', 'https://findahelpline.com/i/iasp')
                 .setDescription('Some informations for you :)')
                 .setThumbnail('https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
                 .addFields(
@@ -20,14 +20,14 @@ module.exports = {
                 .addField('In these strange and stressful times, you’re not alone.', 'Helplines, also known as hotlines, exist to provide a confidential, non-judgemental space – for free.\n\nThey are staffed by supportive people, who provide immediate support, counselling and information.', false)
                 .setImage('https://cdn.discordapp.com/attachments/856253281801994271/857712338307645440/IASP_Logo_Linear.png')
                 .setTimestamp()
-                .setFooter('The offered one who is there for you', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png');
+                .setFooter('The offered one who is there for you', 'https://cdn.discordapp.com/attachments/856253281801994271/858024585419948102/1_KYdE5HFhK1zwX0dsfoaZ9EP5w.png');
         }
         if(args[0]===2){
             const exampleEmbed = new Discord.MessageEmbed()
                 .setColor('#00ffeb')
                 .setTitle('Information')
                 .setURL('https://findahelpline.com/i/iasp')
-                .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png', 'https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
+                .setAuthor('Safety-Bot', 'https://cdn.discordapp.com/attachments/856253281801994271/858023194204307536/1_KYdE5HFhK1zwX0oaZ9EP5w.png', 'https://findahelpline.com/i/iasp')
                 .setDescription('Some informations for you :)')
                 .setThumbnail('https://cdn.discordapp.com/attachments/856253281801994271/857712965554143272/IASP_Logo_Linear.png')
                 .addFields(
@@ -36,7 +36,7 @@ module.exports = {
                 .addField('In these strange and stressful times, you’re not alone.', 'Helplines, also known as hotlines, exist to provide a confidential, non-judgemental space – for free.\n\nThey are staffed by supportive people, who provide immediate support, counselling and information.', false)
                 .setImage('https://cdn.discordapp.com/attachments/856253281801994271/857712338307645440/IASP_Logo_Linear.png')
                 .setTimestamp()
-                .setFooter('The offered one who is there for you', 'https://cdn.discordapp.com/attachments/819260613414748160/856255404229394432/mcashe-mcashe-luciayme.png');
+                .setFooter('The offered one who is there for you', 'https://cdn.discordapp.com/attachments/856253281801994271/858024585419948102/1_KYdE5HFhK1zwX0dsfoaZ9EP5w.png');
                 message.channel.send(exampleEmbed);
             }
         if(args[0]===3){

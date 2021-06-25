@@ -42,16 +42,16 @@ client.on('message', msg => {
     
     if (msg.channel.type == "dm") {
         if(x != 1){
-            msg.author.send("Do u need help or just wanna talk? (y -> yes or n -> no)");
+            msg.author.send("Hello, how are you? (pls a short answer in this section like: not so good or good)");
             x++;
         }
         const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === msg.author.id, { time: 10000 });
         console.log(collector)
         collector.on('collect', msg => {
-            if (msg.content === "y") {
-                msg.channel.send("You can trust me, just let it all out and tell me how you are.but please talk to me in English, I am still in an early stage of development and have only learned one language so far. Thank you for your understanding ");
-            } else if (msg.content === "n") {
-                msg.channel.send("Ok.. see you next time :)");
+            if (msg.content === /not/gm) {
+                msg.channel.send("What is wrong u wanna talk about it?");
+            } else if(msg.content === /good/gm){
+                msg.channel.send("that's nice to hear");
             }
         })
       return;

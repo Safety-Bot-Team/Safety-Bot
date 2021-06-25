@@ -166,6 +166,38 @@ module.exports = async (Discord, client, message) =>{
                 strike:  p,
             }
         });
+        if ((/cant any longer/gm).test(message.content)) {
+            message.author.send('No! Hurting yourself is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but hurting yourself is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
+            p++;
+            await message.channel.messages.fetch({ limit: 1}).then(messages =>{
+                message.channel.bulkDelete(messages)
+            });
+            message.reply("please check your direct messages")
+            const response = await profileModel.findOneAndUpdate({
+                userID: message.author.id,
+            },
+            {
+                $inc: {
+                    strike:  p,
+                }
+            });
+        }
+            if ((/cant any more/gm).test(message.content)) {
+                message.author.send('No! Hurting yourself is not a solution to this problem, there are many people in the world who feel useless and do not find meaning in life but hurting yourself is never a solution to this problem.... Have you ever tried to express yourself to a person? If you dont dare to confide in a person you know, you can try this website, they help anonymously and quickly in many countries... I love you <3 :)  \nWebsite: https://findahelpline.com/i/iasp');
+                p++;
+                await message.channel.messages.fetch({ limit: 1}).then(messages =>{
+                    message.channel.bulkDelete(messages)
+                });
+                message.reply("please check your direct messages")
+                const response = await profileModel.findOneAndUpdate({
+                    userID: message.author.id,
+                },
+                {
+                    $inc: {
+                        strike:  p,
+                    }
+                });  
+            }
     }
     if(profileData.strike >= 3){
         client.users.fetch(profileData.contact).then(dm => {
