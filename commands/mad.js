@@ -8,7 +8,7 @@ module.exports = {
         const memberTarget = message.guild.members.cache.get(profileData.contact);
         message.author.send("You asked for a hug")
         client.users.fetch(profileData.contact).then(dm => {
-            dm.send(`${message.author.username} needs a hug from you.`)
+            dm.send(`${message.author.username} needs a hug from you. (to use -hugu you need to add him as your contact)`)
         })
         await message.channel.messages.fetch({ limit: 1}).then(messages =>{
             message.channel.bulkDelete(messages)

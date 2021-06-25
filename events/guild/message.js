@@ -203,6 +203,14 @@ module.exports = async (Discord, client, message) =>{
         client.users.fetch(profileData.contact).then(dm => {
             dm.send(`Your contact person has mentioned too many suicidal terms, we assume he is not doing so well at the moment. please take care of him and show him the value of his life.... We thank you for being there for him while the bot tries to convince him not to leave. But please remember it is only a messenger with limited answers and a small level of understanding which makes it difficult to respond personally to the person.`)
         })
+        const response = await profileModel.findOneAndUpdate({
+            userID: message.author.id,
+        },
+        {
+            $inc: {
+                strike:  -2,
+            }
+        });  
     }
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 

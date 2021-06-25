@@ -5,7 +5,7 @@ module.exports = {
     description: "check",
     aliases: ["ct", "con"],
     async execute(client, message, cmd, args, Discord, profileData){
-        const memberTarget = message.guild.members.cache.get(profileData.contact);
+        const memberTarget = client.guilds.cache.get(profileData.serverID).members.cache.get(profileData.contact);
         try{
             if(profileData.contact !== ""){
                 message.channel.send(`${message.author.username}, your contact person is ${memberTarget}`); 

@@ -22,7 +22,6 @@ module.exports = {
                     }catch (err) {
                         console.log(err);
                     } 
-                    message.reply(targetlang);
                 } else if (reaction.emoji.name === '🇵🇹') {
                     message.reply('o seu país foi agora fixado em Portugal ');
                     try{

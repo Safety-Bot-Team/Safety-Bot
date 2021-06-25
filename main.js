@@ -48,9 +48,9 @@ client.on('message', msg => {
         const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === msg.author.id, { time: 10000 });
         console.log(collector)
         collector.on('collect', msg => {
-            if (msg.content === /not/gm) {
+            if (msg.content === "not so good") {
                 msg.channel.send("What is wrong u wanna talk about it?");
-            } else if(msg.content === /good/gm){
+            } else if(msg.content === "good"){
                 msg.channel.send("that's nice to hear");
             }
         })
