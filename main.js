@@ -37,7 +37,7 @@ client.on('message', msg => {
         console.log(collector)
         collector.on('collect', msg => {
             if (msg.content === "y") {
-                msg.channel.send("You can trust me, just let it all out and tell me how you are.");
+                msg.channel.send("You can trust me, just let it all out and tell me how you are.but please talk to me in English, I am still in an early stage of development and have only learned one language so far. Thank you for your understanding ");
             } else if (msg.content === "n") {
                 msg.channel.send("Ok.. see you next time :)");
             }
@@ -47,7 +47,6 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
     if (msg.channel.type == "dm") {
- 
         translate(msg, {to: 'en'}).then(msg => {
             console.log(msg.text);
             
