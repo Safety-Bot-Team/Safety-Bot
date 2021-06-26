@@ -15,7 +15,7 @@ module.exports = {
             .addFields(
                 { name: 'Step 1:', value: 'If you are on the server longer than the bot, write -ct once in the chat, if the bot answers, a profile has been found, if it doesnt answer, write the message again until it answers (this is a bug and we are working hard to find a solution).' },
                 { name: 'Step 2', value: 'now enter -ctadd @Username#1234 to add a contact who will be informed as soon as you are not in a good mood.'},
-                { name: 'Step 3', value: 'enter -ct again and if everything worked out, you will see your contact person (please note that currently only one contact person per user is possible, but this will be corrected if you write on other servers and need help) '},
+                { name: 'Step 3', value: 'type -ct again and if everything worked, you will see your contact person (please note that currently only one contact person per user is possible, but they will still be contacted even if you are writing on another server and need help)'},
                 { name: 'Step 4', value: 'now you can use -help to display further commands that you can use'},
                 { name: 'more information?', value: 'use -info to get more information about suicide and mental illness '}
             )
