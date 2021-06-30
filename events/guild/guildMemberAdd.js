@@ -7,6 +7,7 @@ module.exports = async(client, discord, member) => {
         contact: "",
         country: "Null",
         strike: 0,
+        textforu: "Null",
     });
     profile.save();
 }

@@ -2,7 +2,6 @@ module.exports = {
     name: 'clear',
     description: "Clear messages!",
     async  execute(client, message, args, Discord) {
-        let role = message.guild.roles.cache.find(r => r.name === "Mod");
 
         if(message.member.permissions.has("ADMINISTRATOR")){
             if (!args[0]) return message.reply("Gebe eine zahl ein...");

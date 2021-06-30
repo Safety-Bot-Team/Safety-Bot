@@ -17,6 +17,7 @@ module.exports = async (Discord, client, message) =>{
                 contact: "",
                 country: "Null",
                 strike: 0,
+                textforu: "Null",
             });
         }
     }catch(err){
