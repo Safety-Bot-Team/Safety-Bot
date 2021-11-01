@@ -10,12 +10,12 @@ module.exports = {
                 let memberTarget= message.guild.members.cache.get(target.id);
         
                 memberTarget.roles.remove(muteRole.id);
-                 message.channel.send(`<@${memberTarget.user.id}> wurde erfolgreich gemutet!`);
+                 message.channel.send(`<@${memberTarget.user.id}> was successfully unmuted`);
             } else{
-                message.channel.send('Gebe bitte den user an welcher entmutet werden soll!');     
+                message.channel.send('Please specify a user');     
             }
         }else {
-            message.channel.send("Du hast keine Berechtigung um diesen befehl zu verwenden!");
+            message.channel.send("You do not have the authority to unmute people.");
         }
     }
 }

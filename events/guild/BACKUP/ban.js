@@ -9,12 +9,10 @@ module.exports = {
             if(target){
                 const memberTarget = message.guild.members.cache.get(target.id);
                 memberTarget.ban();
-                message.channel.send("Dieser bennutzer wurde erfolgreich gebannt!");
-            } else {
-                message.channel.send(`Du kannst keinen Administrator Kicken!!!`);
+                message.channel.send("This user has been banned");
+            }else{
+                message.channel.send(`You do not have the right to ban this user!`);
             }
-        } else {
-            message.channel.send(`Du hast nicht die berechtigung diesen benutzer zu bannen!!!`);
         }
     }
 }

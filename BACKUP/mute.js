@@ -15,20 +15,20 @@ module.exports = {
     
                 if (!args[1]) {
                     memberTarget.roles.add(muteRole.id);
-                    message.channel.send(`<@${memberTarget.user.id}> wurde erfolgreich gemutet!`);
+                    message.channel.send(`<@${memberTarget.user.id}> was successfully muted`);
                     return
                 }
                 memberTarget.roles.add(muteRole.id);
-                message.channel.send(`<@${memberTarget.user.id}> ist nun fuer ${ms(ms(args[1]))} gemutet!`);
+                message.channel.send(`<@${memberTarget.user.id}> is now muted for ${ms(ms(args[1]))}`);
     
                 setTimeout(function () {
                     memberTarget.roles.remove(muteRole.id);
                 }, ms(args[1]));
             } else {
-                message.channel.send('bitte gebe den user der gemutet werden soll an! ');
+                message.channel.send('Please specify a user');
             }
         }else {
-            message.channel.send("Du hast nicht die Berechtigung Leute zu Muten!");
+            message.channel.send("You do not have the authority to mute people.");
         }
     }
 }

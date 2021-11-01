@@ -10,12 +10,12 @@ module.exports = {
             if(target){
                 const memberTarget = message.guild.members.cache.get(target.id);
                 memberTarget.kick();
-                message.channel.send("Dieser bennutzer wurde erfolgreich gekickt!");
+                message.channel.send("this user was kicked");
             }else{
-                message.channel.send(`Du kannst keinen Administrator kicken!`);
+                message.channel.send(`You do not have the right to kick this user!`);
             }
         } else {
-            message.channel.send("Du hast nicht die berechtigung diesen Nutzer zu kicken!!");
+            message.channel.send("You do not have the right to kick this user!");
         }
     }
 }
