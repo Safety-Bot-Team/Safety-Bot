@@ -1,11 +1,11 @@
 const ms = require('ms')
 module.exports = {
     name: 'mute',
+    category: 'Administration',
     description: "Ja... was sagt der befehl?",
+    aliases: [],
+    userperms: [],
     execute(client, message, args, Discord) {
-        let role = message.guild.roles.cache.find(r => r.name === "Mod");
-
-        if(message.member.permissions.has("MUTE_MEMBERS")){
             const target = message.mentions.users.first();
             if (target) {
     
@@ -27,8 +27,5 @@ module.exports = {
             } else {
                 message.channel.send('bitte gebe den user der gemutet werden soll an! ');
             }
-        }else {
-            message.channel.send("Du hast nicht die Berechtigung Leute zu Muten!");
-        }
     }
 }

@@ -3,11 +3,9 @@
     "",
     "\\commands",
     "\\events",
-    "\\events\\client",
     "\\events\\guild",
-    "\\handlers",
-    "\\Models"
+    "\\handlers"
   ],
-  "SelectedNode": "\\events\\client\\ready.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
