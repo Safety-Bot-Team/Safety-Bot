@@ -4,7 +4,7 @@ module.exports = {
 	description: "Erstellt ein ticket",
 	async execute(client, message, args, prefix) {
 		if (message.guild.channels.cache.find(channel => channel.name === `ticket-${message.author.id}`)) {
-			return message.reply('Du hast bereits ein ticket erstellt');
+			return message.reply(`Du hast bereits ein ticket erstellt, du kannst es unter ticket-${message.author.id} finden.`);
 		}
 
 		message.guild.channels.create(`Ticket-${message.author.id}`, {
